@@ -59,7 +59,7 @@ keys.addEventListener('click', e => {
             } else {
                 calculator.dataset.firstValue = displayedNum;
             }
-    key.classList.add('is-depressed');
+        key.classList.add('is-depressed');
         calculator.dataset.previousKeyType = 'operator';
         calculator.dataset.operator = action;    
     } if (action === 'decimal') {
@@ -80,7 +80,7 @@ keys.addEventListener('click', e => {
         display.textContent = 0;
         calculator.dataset.previousKeyType = 'clear';
     } if (action === 'calculate') {
-        let firstValue = calculator.dataset.firstValue;
+        const firstValue = calculator.dataset.firstValue;
         const operator = calculator.dataset.operator;
         const secondValue = displayedNum;
       if (firstValue) {

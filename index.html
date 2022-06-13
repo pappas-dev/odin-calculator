@@ -9,14 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Calculator</h1>
     <div class="calc">
       <div class="display">0</div>
       <div class="calckeys">
         <div class="column1">
             <div class="calcbut">
-              <button data-action="clear">AC</button>
-            </div>
+              <button class="key-operator"data-action="add">+</button>
+              </div>
             <div class="calcbut">
               <button>7</button>
             </div>
@@ -31,8 +30,8 @@
             </div>
         </div> 
         <div class="column2">
-            <div class="empty">
-              <button>*</button>
+            <div class="calcbut">
+              <button class="key-operator" data-action="subtract">-</button>
             </div>
             <div class="calcbut">
               <button>8</button>
@@ -43,14 +42,14 @@
             <div class="calcbut">
               <button>2</button>
             </div>
-            <div class="empty">
-                <button id="lux">[lux][graves]</button>
+            <div class="calcbut">
+                <button data-action="decimal">.</button>
               </div>
         </div> 
         <div class="column3">
-            <div class="empty">
-              <button>*</button>
-            </div>
+            <div class="calcbut">
+              <button class="key-operator" data-action="multiply">&times;</button>
+              </div>
             <div class="calcbut">
               <button>9</button>
             </div>
@@ -61,26 +60,20 @@
               <button>3</button>
             </div>
             <div class="calcbut">
-              <button data-action="decimal">.</button>
-            </div>
+                <button data-action="clear">AC</button>
+              </div>
         </div>
         <div class="column4">
             <div class="calcbut">
-              <button id="key-operator" data-action="divide">÷</button>
-            </div>
-            <div class="calcbut">
-              <button class="key-operator" data-action="multiply">&times;</button>
-            </div>
-            <div class="calcbut">
-              <button class="key-operator" data-action="subtract">-</button>
-            </div>
-            <div class="calcbut">
-              <button class="key-operator"data-action="add">+</button>
-            </div>
-            <div class="calcbut">
-              <button class="key-equal" data-action="calculate">=</button>
-            </div>
+                <button id="key-operator" data-action="divide">÷</button>
+              </div>
+              <div class="calcbut">
+                <button id='equal' class="key-equal" data-action="calculate">=</button>
+              </div>
       </div>
     </div>
+    <footer><p>[calculator]</p>
+        <a href="https://luxgraves.github.io/">[lux graves]</a>
+    </footer>
 </body>
 </html>
