@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="calc">
+      <div class="display">0</div>
+      <div class="calckeys">
+        <div class="column1">
+            <div class="calcbut">
+              <button data-action="clear">AC</button>
+            </div>
+            <div class="calcbut">
+              <button>7</button>
+            </div>
+            <div class="calcbut">
+              <button>4</button>
+            </div>
+            <div class="calcbut">
+              <button>1</button>
+            </div>
+            <div class="calcbut">
+              <button>0</button>
+            </div>
+        </div> 
+        <div class="column2">
+            <div class="empty">
+              <button>*</button>
+            </div>
+            <div class="calcbut">
+              <button>8</button>
+            </div>
+            <div class="calcbut">
+              <button>5</button>
+            </div>
+            <div class="calcbut">
+              <button>2</button>
+            </div>
+            <div class="empty">
+                <button id="lux">[lux][graves]</button>
+              </div>
+        </div> 
+        <div class="column3">
+            <div class="empty">
+              <button>*</button>
+            </div>
+            <div class="calcbut">
+              <button>9</button>
+            </div>
+            <div class="calcbut">
+              <button>6</button>
+            </div>
+            <div class="calcbut">
+              <button>3</button>
+            </div>
+            <div class="calcbut">
+              <button data-action="decimal">.</button>
+            </div>
+        </div>
+        <div class="column4">
+            <div class="calcbut">
+              <button id="key-operator" data-action="divide">÷</button>
+            </div>
+            <div class="calcbut">
+              <button class="key-operator" data-action="multiply">&times;</button>
+            </div>
+            <div class="calcbut">
+              <button class="key-operator" data-action="subtract">-</button>
+            </div>
+            <div class="calcbut">
+              <button class="key-operator"data-action="add">+</button>
+            </div>
+            <div class="calcbut">
+              <button class="key-equal" data-action="calculate">=</button>
+            </div>
+      </div>
+    </div>
+</body>
+</html>
